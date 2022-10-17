@@ -27,10 +27,9 @@ with open("CHANGELOG.rst", "rb") as fd:
 def main():
     setup(
         name="pluggy",
+        version="0.13.1",
         description="plugin and hook calling mechanisms for python",
         long_description=long_description,
-        use_scm_version={"write_to": "src/pluggy/_version.py"},
-        setup_requires=["setuptools-scm"],
         license="MIT license",
         platforms=["unix", "linux", "osx", "win32"],
         author="Holger Krekel",
