@@ -2,12 +2,12 @@
 requires = [
   # sync with setup.py until we discard non-pep-517/518
   "setuptools>=65.0",
-  "setuptools-scm[toml]>=8.0",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pluggy"
+version = "1.6.0"
 license = {text = "MIT"}
 authors = [{name = "Holger Krekel", email = "holger@merlinux.eu"}]
 classifiers = [
@@ -34,7 +34,6 @@ description = "plugin and hook calling mechanisms for python"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 requires-python = ">=3.9"
 
-dynamic = ["version"]
 [project.optional-dependencies]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark", "coverage"]
@@ -64,9 +63,6 @@ force-sort-within-sections = true
 order-by-type = false
 known-local-folder = ["pluggy"]
 lines-after-imports = 2
-
-[tool.setuptools_scm]
-version_file = "src/pluggy/_version.py"
 
 [tool.towncrier]
 package = "pluggy"
