@@ -1,0 +1,4 @@
+python-pluggy source: file-without-copyright-information
+python-pluggy source: no-debian-changes
+python-pluggy source: source-contains-prebuilt-windows-binary
+python-pluggy source: source-package-encodes-python-version
